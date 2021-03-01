@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"siktim_belani\startup_stm32f103xb.o"
+"siktim_belani\main.o"
+"siktim_belani\stm32f1xx_it.o"
+"siktim_belani\stm32f1xx_hal_msp.o"
+"siktim_belani\stm32f1xx_hal_gpio_ex.o"
+"siktim_belani\stm32f1xx_hal_tim.o"
+"siktim_belani\stm32f1xx_hal_tim_ex.o"
+"siktim_belani\stm32f1xx_hal.o"
+"siktim_belani\stm32f1xx_hal_rcc.o"
+"siktim_belani\stm32f1xx_hal_rcc_ex.o"
+"siktim_belani\stm32f1xx_hal_gpio.o"
+"siktim_belani\stm32f1xx_hal_dma.o"
+"siktim_belani\stm32f1xx_hal_cortex.o"
+"siktim_belani\stm32f1xx_hal_pwr.o"
+"siktim_belani\stm32f1xx_hal_flash.o"
+"siktim_belani\stm32f1xx_hal_flash_ex.o"
+"siktim_belani\stm32f1xx_hal_exti.o"
+"siktim_belani\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "siktim_belani\siktim_belani.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "siktim_belani.map" -o siktim_belani\siktim_belani.axf
